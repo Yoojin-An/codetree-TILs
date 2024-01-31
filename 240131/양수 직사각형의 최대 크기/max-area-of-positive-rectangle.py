@@ -21,8 +21,8 @@ grid = []
 for i in range(1, n + 1):
     grid.append(list(map(int, input().split())))
 
-continuous_positive_nums = get_max_rectangle(grid, n, m)
-if continuous_positive_nums >= 2:
-    print(continuous_positive_nums)
+max_area = get_max_rectangle(grid, n, m)
+if max_area >= 2:
+    print(max_area)
 else:
     print(-1)
