@@ -10,10 +10,11 @@ def is_validate(Y:int, M:int, D: int) -> bool:
     if M == 2:
         if leap_year and D > 29:
             is_validate = False
-        elif D > 28:
+        elif not leap_year and D > 28:
             is_validate = False
     if M in(4, 6, 9, 11) and D == 31:
         is_validate = False
+
     return is_validate
 
 Y, M, D = map(int, input().split())
