@@ -10,4 +10,5 @@ def calculation(a, b):
 
 
 a, b = map(int, input().split())
-print(calculation(a, b), end = ' ')
+a, b = calculation(a, b)
+print(a, b, end = ' ')
