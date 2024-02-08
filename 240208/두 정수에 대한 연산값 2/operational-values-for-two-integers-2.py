@@ -6,8 +6,8 @@ def calculation(a, b):
     else:
         b += 10
         a *= 2
+    return a, b
 
-    print(a, b, end = ' ')
 
 a, b = map(int, input().split())
-calculation(a, b)
+print(calculation(a, b), end = ' ')
