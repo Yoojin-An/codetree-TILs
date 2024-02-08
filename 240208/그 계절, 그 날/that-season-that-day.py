@@ -9,9 +9,10 @@ def is_validate(Y:int, M:int, D: int) -> bool:
         if M == 2 and D > 29:
             is_validate = False
     else:
-        if M in(2, 4, 6, 9, 11):
-            if D == 31:
-                is_validate = False
+        if M == 2 and D > 28:
+            is_validate = False
+        if M in(4, 6, 9, 11) and D == 31:
+            is_validate = False
     return is_validate
 
 Y, M, D = map(int, input().split())
@@ -22,7 +23,7 @@ if is_validate(Y, M, D):
         print("Summer")
     elif M in (9, 10, 11):
         print("Fall")
-    elif M in (12, 1, 2):
+    else:
         print("Winter")
 else:
     print(-1)
