@@ -1,21 +1,24 @@
-def is_validate(Y:int, M:int, D: int) -> bool:
-    is_validate = True
-    leap_year = False    
-    # 윤년 확인
+def is_leap_year(Y):
     if Y % 4 == 0 and Y % 100 != 0:
-        leap_year = True
+        return True
     elif Y % 4 == 0 and Y % 400 == 0:
-        leap_year = True
+        return True
+    return False
+
+def is_validate(Y:int, M:int, D: int) -> bool:
+    leap_year = is_leap_year(Y)
+    is_validate = True  
+
     # 30일 이하인 달 확인
     if M == 2:
         if leap_year and D > 29:
-            is_validate = False
+            return False
         elif not leap_year and D > 28:
-            is_validate = False
+            return False
     if M in(4, 6, 9, 11) and D == 31:
-        is_validate = False
+        return False
 
-    return is_validate
+    return True
 
 Y, M, D = map(int, input().split())
 if is_validate(Y, M, D):
