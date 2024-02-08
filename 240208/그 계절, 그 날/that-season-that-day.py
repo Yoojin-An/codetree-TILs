@@ -22,7 +22,7 @@ if is_validate(Y, M, D):
         print("Summer")
     elif M in (9, 10, 11):
         print("Fall")
-    else:
+    elif M in (12, 1, 2):
         print("Winter")
 else:
     print(-1)
