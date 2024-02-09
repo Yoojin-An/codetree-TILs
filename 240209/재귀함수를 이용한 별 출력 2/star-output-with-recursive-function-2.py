@@ -9,7 +9,7 @@ def recursive_fun_plus(n, end):
     n = int(n)
     print("* " * n)
     if n == end:
-        return 1
+        return
     return recursive_fun_plus(n + 1, end)
 
 n = int(input())
