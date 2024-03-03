@@ -1,4 +1,5 @@
 n = int(input())
+area = n ** 2
 if n < 5:
-    print("tiny")
-print(n**2)
+    print(area, "tiny", sep = "\n")
+print(area)
