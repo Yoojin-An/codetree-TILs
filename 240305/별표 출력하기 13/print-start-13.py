@@ -6,7 +6,7 @@ for i in range(1, n + 1):
         num = n
         n -= 1
     else:
-        num = n // 2
+        num = i // 2
     stars = "* " * num
     print(stars)
     upper_stars.append(stars)
