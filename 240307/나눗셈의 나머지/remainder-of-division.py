@@ -9,7 +9,7 @@ while True:
         remainders[remainder] = 0
     remainders[remainder] += 1
     a = a // b
-    if a == 0 or a < b:
+    if a <= 1:
         break
 
 # 나머지가 등장한 횟수만 리스트에 담는다.
