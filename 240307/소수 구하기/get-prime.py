@@ -1,5 +1,4 @@
 n = int(input())
-answer = []
 
 def is_decimal(num) -> bool:
     answer = True
