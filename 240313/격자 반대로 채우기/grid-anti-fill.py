@@ -26,7 +26,6 @@ else:
                 arr_2d[j][i] = num
                 num += 1
 
-
 for row in arr_2d:
   for col in row:
     print(col, end=" ")
