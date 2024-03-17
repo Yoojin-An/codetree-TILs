@@ -3,7 +3,7 @@ B = input()
 
 answer = 0
 
-for i in range(len(A)):
+for i in range(len(A) - 1):
     if A[i:i + 2] == B:
         answer += 1
 
