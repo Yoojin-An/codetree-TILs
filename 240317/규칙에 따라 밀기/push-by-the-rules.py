@@ -20,6 +20,7 @@ elif len_L < len_R:
     condition = 'R'
 else:
     condition = None
+
 cnt = abs(len_L - len_R)
 
 shifted_string  = shift(string, condition, cnt)
