@@ -4,7 +4,7 @@ def shift(string, condition, cnt):
             string = string[1:] + string[0]
     elif condition == 'R':
         for i in range(cnt):
-            string = string[-1] + string[1:-1]
+            string = string[-1] + string[:-1]
     else:
         pass
     return string
