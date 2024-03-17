@@ -1,7 +1,5 @@
 n = int(input())
-lines = []
-for i in range(n):
-    lines.append(input())
+lines = [input() for _ in range(n)]
 condition = input()
 
 length = 0
