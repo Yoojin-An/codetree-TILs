@@ -1,6 +1,5 @@
 a, b = map(int, input().split())
-n = input()
-n = int(n, a)
+n = int(input(), a)
 if b == 2:
     n = bin(n).replace("0b", "")
 elif b == 8:
